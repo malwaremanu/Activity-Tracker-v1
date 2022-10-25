@@ -1,16 +1,14 @@
 <template>
-  <div>
-
-<div class="h-[500px] bg-black p-6">
+<div class="p-6">
         <div
           class="w-7/8 m-8 select-none rounded-lg border-green-600 bg-white p-3 text-left">
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-3">
               <div class="flex items-center gap-2 text-lg font-semibold">
                 <div class="h-2 w-2 rounded-full bg-green-600">&nbsp</div>
-                Manupal Choudhary {{ count }} --
+                Manupal Choudhary
               </div>
-              <div class="text-gray-400">3h ago</div>
+              <div class="text-gray-400 text-xs">3h ago</div>
             </div>
             <div class="flex items-center gap-3">
               <svg
@@ -121,55 +119,5 @@
             </div>
           </div>
         </div>
-      </div>
-      
-  </div>
-
+</div>
 </template>
-
-<script>
-export default {
-  name: 'IndexPage',
-  data() {
-    return {
-      count: 0,
-      projects: [
-        {
-          title: 'SBI Bank',
-          project_code: '2134',
-          comments: '',
-          date: '22/09/2022',
-        },
-        {
-          title: 'Sample Project',
-          project_code: '5614',
-          comments: '',
-          date: '23/09/2022',
-        },
-        {
-          title: 'PNB Bank',
-          project_code: '3145',
-          comments: '',
-          date: '24/09/2022',
-        },
-      ],
-      data: [
-        {
-          status: 'closed',
-          activity_message: 'this is a sample ',
-          comments: [
-            { author: 'Anubhav Sinha', msg: 'sample comment', time: '3hr ago' },
-            { author: 'Pritam', msg: 'sample comment', time: '3hr ago' },
-            { author: 'Sonu', msg: 'sample comment', time: '3hr ago' },
-          ],
-        },
-        {
-          status: 'closed',
-          activity_message: 'this is a another sample ',
-          comments: [],
-        },
-      ],
-    }
-  },
-}
-</script>
